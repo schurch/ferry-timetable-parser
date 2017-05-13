@@ -72,7 +72,7 @@ elementToRouteSection element =
   RouteSection
   { routeSectionId = attrValue "id" element
   , routeLink =
-      fromMaybe emptyRouteLink $
+      fromMaybe (RouteLink "" "" "" "") $
       elementToRouteLink <$> (findChild "RouteLink" element)
   }
 
@@ -88,9 +88,6 @@ elementToRouteLink element =
       strContent <$> (findChild "To" element >>= findChild "StopPointRef")
   , routeDirection = fromMaybe "" $ strContent <$> findChild "Direction" element
   }
-
-emptyRouteLink :: RouteLink
-emptyRouteLink = RouteLink "" "" "" ""
 
 -- Routes
 getRoutes :: Element -> Maybe [Route]
