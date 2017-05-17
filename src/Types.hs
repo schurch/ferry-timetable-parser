@@ -2,6 +2,16 @@ module Types where
 
 import Data.Time
 
+data TransXChangeData = TransXChangeData
+  { stopPoints :: [AnnotatedStopPointRef]
+  , routeSections :: [RouteSection]
+  , routes :: [Route]
+  , journeyPatternSections :: [JourneyPatternSection]
+  , operators :: [Operator]
+  , services :: [Service]
+  , vehicleJourneys :: [VehicleJourney]
+  } deriving (Show)
+
 data AnnotatedStopPointRef = AnnotatedStopPointRef
   { stopPointRef :: String
   , commonName :: String
@@ -51,8 +61,7 @@ data Operator = Operator
 data Service = Service
   { serviceCode :: String
   , lines :: [Line]
-  , startDate :: Maybe UTCTime
-  , endDate :: Maybe UTCTime
+  , operatingPeriod :: DateRange
   , registeredOperatorRef :: String
   , mode :: String
   , description :: String
@@ -75,3 +84,30 @@ data JourneyPattern = JourneyPattern
   , journeyPatternDirection :: String
   , journeyPatternSectionRef :: String
   } deriving (Show)
+
+data VehicleJourney = VehicleJourney
+  { operatorRef :: String
+  , vehicleJourneyCode :: String
+  , serviceRef :: String
+  , lineRef :: String
+  , journeyPatternRef :: String
+  , departureTime :: String
+  , daysOfWeek :: [WeekDay]
+  , specialDaysOfOperation :: [DateRange]
+  , specialDaysOfNonOperation :: [DateRange]
+  } deriving (Show)
+
+data DateRange = DateRange
+  { startDate :: Maybe UTCTime
+  , endDate :: Maybe UTCTime
+  } deriving (Show)
+
+data WeekDay
+  = Monday
+  | Tuesday
+  | Wednesday
+  | Thursday
+  | Friday
+  | Saturday
+  | Sunday
+  deriving (Show)
