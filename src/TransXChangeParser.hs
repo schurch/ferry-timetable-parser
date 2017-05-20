@@ -7,7 +7,6 @@ module TransXChangeParser
 import Data.Maybe
 import Data.String
 import Data.Time
-import Debug.Trace
 import Text.XML.Light
 import Types
 
@@ -60,17 +59,15 @@ elementToStopPoint stopPointElement =
 -- Route Sections
 getRouteSections :: Element -> Maybe [RouteSection]
 getRouteSections element = do
-  routeSections <- findChild "RouteSections" element
-  let routeSectionElements = findChildren "RouteSection" routeSections
+  routeSectionsElement <- findChild "RouteSections" element
+  let routeSectionElements = findChildren "RouteSection" routeSectionsElement
   return $ map elementToRouteSection routeSectionElements
 
 elementToRouteSection :: Element -> RouteSection
 elementToRouteSection element =
   RouteSection
   { routeSectionId = attrValue "id" element
-  , routeLink =
-      fromMaybe (RouteLink "" "" "" "") $
-      elementToRouteLink <$> (findChild "RouteLink" element)
+  , routeLinks = map elementToRouteLink (findChildren "RouteLink" element)
   }
 
 elementToRouteLink :: Element -> RouteLink
@@ -90,8 +87,8 @@ elementToRouteLink element =
 getRoutes :: Element -> Maybe [Route]
 getRoutes element = do
   routesElement <- findChild "Routes" element
-  let routes = findChildren "Route" routesElement
-  return $ map elementToRoute routes
+  let routeElements = findChildren "Route" routesElement
+  return $ map elementToRoute routeElements
 
 elementToRoute :: Element -> Route
 elementToRoute element =
@@ -107,9 +104,9 @@ elementToRoute element =
 getJourneyPatternSections :: Element -> Maybe [JourneyPatternSection]
 getJourneyPatternSections element = do
   journeyPatternSectionsElement <- findChild "JourneyPatternSections" element
-  let journeyPatternSections =
+  let journeyPatternSectionsElements =
         findChildren "JourneyPatternSection" journeyPatternSectionsElement
-  return $ map elementToJourneyPatternSection journeyPatternSections
+  return $ map elementToJourneyPatternSection journeyPatternSectionsElements
 
 elementToJourneyPatternSection :: Element -> JourneyPatternSection
 elementToJourneyPatternSection element =

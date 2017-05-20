@@ -19,7 +19,7 @@ data AnnotatedStopPointRef = AnnotatedStopPointRef
 
 data RouteSection = RouteSection
   { routeSectionId :: String
-  , routeLink :: RouteLink
+  , routeLinks :: [RouteLink]
   } deriving (Show)
 
 data RouteLink = RouteLink
