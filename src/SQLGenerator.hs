@@ -5,12 +5,19 @@ module SQLGenerator
   ) where
 
 import Data.List
+import Data.Maybe
+import Data.Time
+import Data.Time.Clock.POSIX
 import Text.Printf
 import Types
 
 type RouteSectionStatement = (String, [String])
 
 type JourneyPatternSectionStatement = (String, [String])
+
+type ServiceSectionStatement = (String, [String], [String])
+
+type VehicleJourneySectionStatement = (String, [String], [String])
 
 generateSQLStatements :: TransXChangeData -> [String]
 generateSQLStatements transXChangeData =
@@ -20,6 +27,8 @@ generateSQLStatements transXChangeData =
     , routeSectionStatements
     , journeyPatternSectionStatements
     , operatorStatements
+    , serviceStatements
+    , vehicleJourneyStatements
     ]
   where
     stopPointStatements =
@@ -35,6 +44,14 @@ generateSQLStatements transXChangeData =
       map journeyPatternSectionToSQLStatement $
       journeyPatternSections transXChangeData
     operatorStatements = map operatorToSQLStatement $ operators transXChangeData
+    serviceStatements =
+      concat $
+      map flattenServiceStatements $
+      map serviceToSQLStatement $ services transXChangeData
+    vehicleJourneyStatements =
+      concat $
+      map flattenVehicleJourneyStatements $
+      map vehicleJourneyToSQLStatement $ vehicleJourneys transXChangeData
 
 -- StopPoints
 stopPointToSQLStatement :: AnnotatedStopPointRef -> String
@@ -128,3 +145,120 @@ operatorToSQLStatement operator =
     (nationalOperatorCode operator)
     (operatorCode operator)
     (operatorShortName operator)
+
+-- Services
+serviceToSQLStatement :: Service -> ServiceSectionStatement
+serviceToSQLStatement service =
+  (serviceStatement, lineStatements, journeyPatternStatements)
+  where
+    serviceStatement =
+      printf
+        "INSERT INTO Service \
+      \(ServiceCode, RegisteredOperatorRef, Mode, Description, Origin, Destination, StartDate, EndDate) \
+      \VALUES ('%s', '%s', '%s', '%s', '%s', '%s', %s, %s);"
+        (serviceCode service)
+        (registeredOperatorRef service)
+        (mode service)
+        (description service)
+        (origin (standardService service))
+        (destination (standardService service))
+        start
+        end
+    start =
+      fromMaybe "0" $ show . dateToInt <$> (startDate (operatingPeriod service))
+    end =
+      fromMaybe "0" $ show . dateToInt <$> (endDate (operatingPeriod service))
+    lineStatements =
+      map (lineToSQLStatement (serviceCode service)) (Types.lines service)
+    journeyPatternStatements =
+      map
+        (journeyPatterToSQLStatement (serviceCode service))
+        (journeyPatterns (standardService service))
+
+lineToSQLStatement :: String -> Line -> String
+lineToSQLStatement serviceCode line =
+  printf
+    "INSERT INTO Line (LineId, ServiceRef, LineName) VALUES ('%s', '%s', '%s');"
+    (lineId line)
+    serviceCode
+    (lineName line)
+
+journeyPatterToSQLStatement :: String -> JourneyPattern -> String
+journeyPatterToSQLStatement serviceCode journeyPattern =
+  printf
+    "INSERT INTO JourneyPattern (JourneyPatternId, ServiceRef, JourneyPatternSectionRef, JourneyPatternDirection) \
+    \VALUES ('%s', '%s', '%s', '%s');"
+    (journeyPatternId journeyPattern)
+    serviceCode
+    (journeyPatternSectionRef journeyPattern)
+    (journeyPatternDirection journeyPattern)
+
+flattenServiceStatements :: ServiceSectionStatement -> [String]
+flattenServiceStatements (serviceStatement, lineStatements, journeyPatternStatements) =
+  [serviceStatement] ++ lineStatements ++ journeyPatternStatements
+
+-- Vehicle Journeys
+vehicleJourneyToSQLStatement :: VehicleJourney -> VehicleJourneySectionStatement
+vehicleJourneyToSQLStatement vehicleJourney =
+  ( vehicleJourneyStatement
+  , daysOfOperationStatements
+  , daysOfNonOperationStatements)
+  where
+    vehicleJourneyStatement =
+      printf
+        "INSERT INTO VehicleJourney \
+      \(VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) VALUES \
+      \('%s', '%s', '%s', '%s', '%s', %s, %s, %s, %s, %s, %s, %s);"
+        (vehicleJourneyCode vehicleJourney)
+        (serviceRef vehicleJourney)
+        (lineRef vehicleJourney)
+        (journeyPatternRef vehicleJourney)
+        (operatorRef vehicleJourney)
+        (boolToInt (elem Monday (daysOfWeek vehicleJourney)))
+        (boolToInt (elem Tuesday (daysOfWeek vehicleJourney)))
+        (boolToInt (elem Wednesday (daysOfWeek vehicleJourney)))
+        (boolToInt (elem Thursday (daysOfWeek vehicleJourney)))
+        (boolToInt (elem Friday (daysOfWeek vehicleJourney)))
+        (boolToInt (elem Saturday (daysOfWeek vehicleJourney)))
+        (boolToInt (elem Sunday (daysOfWeek vehicleJourney)))
+    dateRangeToDayOfOperatation =
+      vehicleJourneyOperationRangeToSQLStatement
+        "DayOfOperation"
+        (vehicleJourneyCode vehicleJourney)
+    daysOfOperationStatements =
+      map dateRangeToDayOfOperatation (specialDaysOfOperation vehicleJourney)
+    dateRangeToDayOfNonOperatation =
+      vehicleJourneyOperationRangeToSQLStatement
+        "DayOfNonOperation"
+        (vehicleJourneyCode vehicleJourney)
+    daysOfNonOperationStatements =
+      map
+        dateRangeToDayOfNonOperatation
+        (specialDaysOfNonOperation vehicleJourney)
+
+vehicleJourneyOperationRangeToSQLStatement :: String
+                                           -> String
+                                           -> DateRange
+                                           -> String
+vehicleJourneyOperationRangeToSQLStatement rangeTableName vehicleJourneyCode dateRange =
+  printf
+    "INSERT INTO %s (VehicleJourneyRef, StartDate, EndDate) VALUES ('%s', %s, %s);"
+    rangeTableName
+    vehicleJourneyCode
+    (fromMaybe "0" $ show . dateToInt <$> (startDate dateRange))
+    (fromMaybe "0" $ show . dateToInt <$> (startDate dateRange))
+
+flattenVehicleJourneyStatements :: VehicleJourneySectionStatement -> [String]
+flattenVehicleJourneyStatements (vehicleJourneyStatement, daysOfOperationStatements, daysOfNonOperationStatements) =
+  [vehicleJourneyStatement] ++
+  daysOfOperationStatements ++ daysOfNonOperationStatements
+
+-- Helpers
+dateToInt :: UTCTime -> Int
+dateToInt date = (floor $ utcTimeToPOSIXSeconds date) :: Int
+
+boolToInt :: Bool -> String
+boolToInt bool =
+  if bool
+    then "1"
+    else "0"

@@ -110,4 +110,4 @@ data WeekDay
   | Friday
   | Saturday
   | Sunday
-  deriving (Show)
+  deriving (Show, Eq)

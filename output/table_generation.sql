@@ -6,6 +6,12 @@ DROP TABLE "Route";
 DROP TABLE "JourneyPatternSection";
 DROP TABLE "JourneyPatternTimingLink";
 DROP TABLE "Operator";
+DROP TABLE "Service";
+DROP TABLE "Line";
+DROP TABLE "JourneyPattern";
+DROP TABLE "VehicleJourney";
+DROP TABLE "DayOfOperation";
+DROP TABLE "DayOfNonOperation";
 
 CREATE TABLE "AnnotatedStopPointRef" (
 	"StopPointRef" TEXT PRIMARY KEY NOT NULL UNIQUE,
@@ -53,5 +59,56 @@ CREATE TABLE "Operator" (
 	"NationalOperatorCode" TEXT NOT NULL,
 	"OperatorCode" TEXT NOT NULL,
 	"OperatorShortName" TEXT NOT NULL
+);
+
+CREATE TABLE "Service" (
+	"ServiceCode" TEXT PRIMARY KEY NOT NULL UNIQUE,
+	"RegisteredOperatorRef" TEXT NOT NULL,
+	"Mode" TEXT NOT NULL,
+	"Description" TEXT NOT NULL,
+	"Origin" TEXT NOT NULL,
+	"Destination" TEXT NOT NULL,
+	"StartDate" INTEGER NOT NULL,
+	"EndDate" INTEGER NOT NULL
+);
+
+CREATE TABLE "Line" (
+	"LineId" TEXT PRIMARY KEY NOT NULL UNIQUE,
+	"ServiceRef" TEXT NOT NULL REFERENCES "Service"("ServiceCode"),
+	"LineName" TEXT NOT NULL
+);
+
+CREATE TABLE "JourneyPattern" (
+	"JourneyPatternId" TEXT PRIMARY KEY NOT NULL UNIQUE,
+	"ServiceRef" TEXT NOT NULL REFERENCES "Service"("ServiceCode"),
+	"JourneyPatternSectionRef" TEXT NOT NULL REFERENCES "JourneyPatternSection"("JourneyPatterSectionId"),
+	"JourneyPatternDirection" TEXT NOT NULL
+);
+
+CREATE TABLE "VehicleJourney" (
+	"VehicleJourneyCode" TEXT PRIMARY KEY NOT NULL UNIQUE,
+	"ServiceRef" TEXT NOT NULL REFERENCES "Service"("ServiceCode"),
+	"LineRef" TEXT NOT NULL REFERENCES "Line"("LineId"),
+	"JourneyPatternRef" TEXT NOT NULL REFERENCES "JourneyPattern"("JourneyPatternId"),
+	"OperatorRef" TEXT NOT NULL REFERENCES "Operator"("OperatorId"),
+	"Monday" INTEGER NOT NULL,
+	"Tuesday" INTEGER NOT NULL,
+	"Wednesday" INTEGER NOT NULL,
+	"Thursday" INTEGER NOT NULL,
+	"Friday" INTEGER NOT NULL,
+	"Saturday" INTEGER NOT NULL,
+	"Sunday" INTEGER NOT NULL
+);
+
+CREATE TABLE "DayOfOperation" (
+	"VehicleJourneyRef" TEXT NOT NULL REFERENCES "VehicleJourney"("VehicleJourneyCode"),
+	"StartDate" INTEGER NOT NULL,
+	"EndDate" INTEGER NOT NULL
+);
+
+CREATE TABLE "DayOfNonOperation" (
+	"VehicleJourneyRef" TEXT NOT NULL REFERENCES "VehicleJourney"("VehicleJourneyCode"),
+	"StartDate" INTEGER NOT NULL,
+	"EndDate" INTEGER NOT NULL
 );
 
