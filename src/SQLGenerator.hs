@@ -6,6 +6,7 @@ module SQLGenerator
 
 import Data.List
 import Data.Maybe
+import qualified Data.Text as T
 import Data.Time
 import Data.Time.Clock.POSIX
 import Text.Printf
@@ -204,11 +205,12 @@ vehicleJourneyToSQLStatement vehicleJourney =
   , daysOfOperationStatements
   , daysOfNonOperationStatements)
   where
+    (hour, minute, second) = splitTime (departureTime vehicleJourney)
     vehicleJourneyStatement =
       printf
         "INSERT INTO VehicleJourney \
-      \(VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) VALUES \
-      \('%s', '%s', '%s', '%s', '%s', %s, %s, %s, %s, %s, %s, %s);"
+      \(VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond) VALUES \
+      \('%s', '%s', '%s', '%s', '%s', %s, %s, %s, %s, %s, %s, %s, %d, %d, %d);"
         (vehicleJourneyCode vehicleJourney)
         (serviceRef vehicleJourney)
         (lineRef vehicleJourney)
@@ -221,6 +223,9 @@ vehicleJourneyToSQLStatement vehicleJourney =
         (boolToInt (elem Friday (daysOfWeek vehicleJourney)))
         (boolToInt (elem Saturday (daysOfWeek vehicleJourney)))
         (boolToInt (elem Sunday (daysOfWeek vehicleJourney)))
+        hour
+        minute
+        second
     dateRangeToDayOfOperatation =
       vehicleJourneyOperationRangeToSQLStatement
         "DayOfOperation"
@@ -235,6 +240,14 @@ vehicleJourneyToSQLStatement vehicleJourney =
       map
         dateRangeToDayOfNonOperatation
         (specialDaysOfNonOperation vehicleJourney)
+
+splitTime :: String -> (Integer, Integer, Integer)
+splitTime timeString =
+  ( read $ T.unpack $ splitString !! 0 :: Integer
+  , read $ T.unpack $ splitString !! 1 :: Integer
+  , read $ T.unpack $ splitString !! 2 :: Integer)
+  where
+    splitString = T.splitOn (T.pack ":") (T.pack timeString)
 
 vehicleJourneyOperationRangeToSQLStatement :: String
                                            -> String
