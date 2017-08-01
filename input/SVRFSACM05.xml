@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TransXChange xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" CreationDateTime="2017-03-19T15:03:00-00:00" ModificationDateTime="2017-03-19T15:03:00-00:00" Modification="new" RevisionNumber="0" FileName="SVRFSACM05.xml" SchemaVersion="2.1" RegistrationDocument="false" xmlns="http://www.transxchange.org.uk/">
+<TransXChange xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" CreationDateTime="2017-07-17T12:08:00-00:00" ModificationDateTime="2017-07-17T12:08:00-00:00" Modification="new" RevisionNumber="0" FileName="SVRFSACM05.xml" SchemaVersion="2.1" RegistrationDocument="false" xmlns="http://www.transxchange.org.uk/">
   <StopPoints>
     <AnnotatedStopPointRef>
       <StopPointRef>9300BRB</StopPointRef>
@@ -12,7 +12,7 @@
   </StopPoints>
   <RouteSections>
     <RouteSection id="FSACM05_001">
-      <RouteLink id="FSACM05_001_276311">
+      <RouteLink id="FSACM05_001_269698">
         <From>
           <StopPointRef>9300BRB</StopPointRef>
         </From>
@@ -23,7 +23,7 @@
       </RouteLink>
     </RouteSection>
     <RouteSection id="FSACM05_002">
-      <RouteLink id="FSACM05_002_276313">
+      <RouteLink id="FSACM05_002_269700">
         <From>
           <StopPointRef>9300ARD</StopPointRef>
         </From>
@@ -48,7 +48,7 @@
   </Routes>
   <JourneyPatternSections>
     <JourneyPatternSection id="JPS_FSACM05-3">
-      <JourneyPatternTimingLink id="JPS_FSACM05-3_276311">
+      <JourneyPatternTimingLink id="JPS_FSACM05-3_269698">
         <From>
           <StopPointRef>9300BRB</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
@@ -57,13 +57,13 @@
           <StopPointRef>9300ARD</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
         </To>
-        <RouteLinkRef>FSACM05_001_276311</RouteLinkRef>
+        <RouteLinkRef>FSACM05_001_269698</RouteLinkRef>
         <Direction>inbound</Direction>
         <RunTime>PT3300S</RunTime>
       </JourneyPatternTimingLink>
     </JourneyPatternSection>
     <JourneyPatternSection id="JPS_FSACM05-4">
-      <JourneyPatternTimingLink id="JPS_FSACM05-4_276313">
+      <JourneyPatternTimingLink id="JPS_FSACM05-4_269700">
         <From>
           <StopPointRef>9300ARD</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
@@ -72,7 +72,7 @@
           <StopPointRef>9300BRB</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
         </To>
-        <RouteLinkRef>FSACM05_002_276313</RouteLinkRef>
+        <RouteLinkRef>FSACM05_002_269700</RouteLinkRef>
         <Direction>outbound</Direction>
         <RunTime>PT3300S</RunTime>
       </JourneyPatternTimingLink>
@@ -94,7 +94,7 @@
         </Line>
       </Lines>
       <OperatingPeriod>
-        <StartDate>2017-01-22</StartDate>
+        <StartDate>2017-03-31</StartDate>
         <EndDate>2049-12-31</EndDate>
       </OperatingPeriod>
       <RegisteredOperatorRef>CAL</RegisteredOperatorRef>
@@ -123,1493 +123,11 @@
       <OperatingProfile>
         <RegularDayType>
           <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
             <Friday />
           </DaysOfWeek>
         </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98549</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>08:20:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98550</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>11:05:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98551</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>13:55:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98552</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>16:40:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98553</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>19:20:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98564</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>08:20:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98565</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>11:05:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98566</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>13:55:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98567</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>16:40:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Sunday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-01-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-01-29</StartDate>
-              <EndDate>2017-01-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-05</StartDate>
-              <EndDate>2017-02-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-12</StartDate>
-              <EndDate>2017-02-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-19</StartDate>
-              <EndDate>2017-02-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-26</StartDate>
-              <EndDate>2017-02-26</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-05</StartDate>
-              <EndDate>2017-03-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-12</StartDate>
-              <EndDate>2017-03-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-19</StartDate>
-              <EndDate>2017-03-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-26</StartDate>
-              <EndDate>2017-03-26</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98576</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>11:05:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Sunday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-01-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-01-29</StartDate>
-              <EndDate>2017-01-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-05</StartDate>
-              <EndDate>2017-02-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-12</StartDate>
-              <EndDate>2017-02-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-19</StartDate>
-              <EndDate>2017-02-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-26</StartDate>
-              <EndDate>2017-02-26</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-05</StartDate>
-              <EndDate>2017-03-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-12</StartDate>
-              <EndDate>2017-03-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-19</StartDate>
-              <EndDate>2017-03-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-26</StartDate>
-              <EndDate>2017-03-26</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98577</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>13:50:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Sunday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-01-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-01-29</StartDate>
-              <EndDate>2017-01-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-05</StartDate>
-              <EndDate>2017-02-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-12</StartDate>
-              <EndDate>2017-02-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-19</StartDate>
-              <EndDate>2017-02-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-26</StartDate>
-              <EndDate>2017-02-26</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-05</StartDate>
-              <EndDate>2017-03-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-12</StartDate>
-              <EndDate>2017-03-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-19</StartDate>
-              <EndDate>2017-03-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-26</StartDate>
-              <EndDate>2017-03-26</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98578</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>16:40:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Sunday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-01-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-01-29</StartDate>
-              <EndDate>2017-01-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-05</StartDate>
-              <EndDate>2017-02-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-12</StartDate>
-              <EndDate>2017-02-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-19</StartDate>
-              <EndDate>2017-02-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-26</StartDate>
-              <EndDate>2017-02-26</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-05</StartDate>
-              <EndDate>2017-03-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-12</StartDate>
-              <EndDate>2017-03-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-19</StartDate>
-              <EndDate>2017-03-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-26</StartDate>
-              <EndDate>2017-03-26</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98579</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>19:20:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98587</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>07:00:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98588</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>09:45:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98589</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>12:30:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98590</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>15:20:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98591</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>18:00:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98602</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>07:00:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98603</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>09:45:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98604</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>12:30:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98605</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>15:20:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Saturday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-28</StartDate>
-              <EndDate>2017-01-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-04</StartDate>
-              <EndDate>2017-02-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-11</StartDate>
-              <EndDate>2017-02-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-18</StartDate>
-              <EndDate>2017-02-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-25</StartDate>
-              <EndDate>2017-02-25</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-04</StartDate>
-              <EndDate>2017-03-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-11</StartDate>
-              <EndDate>2017-03-11</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-18</StartDate>
-              <EndDate>2017-03-18</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-25</StartDate>
-              <EndDate>2017-03-25</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98606</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>18:00:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Sunday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-01-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-01-29</StartDate>
-              <EndDate>2017-01-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-05</StartDate>
-              <EndDate>2017-02-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-12</StartDate>
-              <EndDate>2017-02-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-19</StartDate>
-              <EndDate>2017-02-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-26</StartDate>
-              <EndDate>2017-02-26</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-05</StartDate>
-              <EndDate>2017-03-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-12</StartDate>
-              <EndDate>2017-03-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-19</StartDate>
-              <EndDate>2017-03-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-26</StartDate>
-              <EndDate>2017-03-26</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98616</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>09:45:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Sunday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-01-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-01-29</StartDate>
-              <EndDate>2017-01-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-05</StartDate>
-              <EndDate>2017-02-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-12</StartDate>
-              <EndDate>2017-02-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-19</StartDate>
-              <EndDate>2017-02-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-26</StartDate>
-              <EndDate>2017-02-26</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-05</StartDate>
-              <EndDate>2017-03-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-12</StartDate>
-              <EndDate>2017-03-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-19</StartDate>
-              <EndDate>2017-03-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-26</StartDate>
-              <EndDate>2017-03-26</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98617</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>12:30:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Sunday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-01-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-01-29</StartDate>
-              <EndDate>2017-01-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-05</StartDate>
-              <EndDate>2017-02-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-12</StartDate>
-              <EndDate>2017-02-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-19</StartDate>
-              <EndDate>2017-02-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-26</StartDate>
-              <EndDate>2017-02-26</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-05</StartDate>
-              <EndDate>2017-03-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-12</StartDate>
-              <EndDate>2017-03-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-19</StartDate>
-              <EndDate>2017-03-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-26</StartDate>
-              <EndDate>2017-03-26</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98618</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>15:15:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Sunday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-01-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-01-29</StartDate>
-              <EndDate>2017-01-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-05</StartDate>
-              <EndDate>2017-02-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-12</StartDate>
-              <EndDate>2017-02-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-19</StartDate>
-              <EndDate>2017-02-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-02-26</StartDate>
-              <EndDate>2017-02-26</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-05</StartDate>
-              <EndDate>2017-03-05</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-12</StartDate>
-              <EndDate>2017-03-12</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-19</StartDate>
-              <EndDate>2017-03-19</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-03-26</StartDate>
-              <EndDate>2017-03-26</EndDate>
-            </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-03-31</StartDate>
-              <EndDate>2049-12-31</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98619</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
-      <DepartureTime>18:00:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98554</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>08:20:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98555</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>11:05:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98556</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>13:55:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98557</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>16:40:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Monday />
-            <Tuesday />
-            <Wednesday />
-            <Thursday />
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98558</VehicleJourneyCode>
-      <ServiceRef>FSACM05</ServiceRef>
-      <LineRef>0</LineRef>
-      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
-      <DepartureTime>19:20:00</DepartureTime>
-    </VehicleJourney>
-    <VehicleJourney>
-      <OperatorRef>CAL</OperatorRef>
-      <OperatingProfile>
-        <RegularDayType>
-          <DaysOfWeek>
-            <Friday />
-          </DaysOfWeek>
-        </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
-      </OperatingProfile>
-      <VehicleJourneyCode>98548</VehicleJourneyCode>
+      <VehicleJourneyCode>76687</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -1620,39 +138,106 @@
       <OperatingProfile>
         <RegularDayType>
           <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+      </OperatingProfile>
+      <VehicleJourneyCode>76688</VehicleJourneyCode>
+      <ServiceRef>FSACM05</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
+      <DepartureTime>08:20:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CAL</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+      </OperatingProfile>
+      <VehicleJourneyCode>76689</VehicleJourneyCode>
+      <ServiceRef>FSACM05</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
+      <DepartureTime>11:05:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CAL</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+      </OperatingProfile>
+      <VehicleJourneyCode>76690</VehicleJourneyCode>
+      <ServiceRef>FSACM05</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
+      <DepartureTime>13:55:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CAL</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+      </OperatingProfile>
+      <VehicleJourneyCode>76691</VehicleJourneyCode>
+      <ServiceRef>FSACM05</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
+      <DepartureTime>16:40:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CAL</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
+            <Monday />
+            <Tuesday />
+            <Wednesday />
+            <Thursday />
+            <Friday />
+          </DaysOfWeek>
+        </RegularDayType>
+      </OperatingProfile>
+      <VehicleJourneyCode>76692</VehicleJourneyCode>
+      <ServiceRef>FSACM05</ServiceRef>
+      <LineRef>0</LineRef>
+      <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
+      <DepartureTime>19:20:00</DepartureTime>
+    </VehicleJourney>
+    <VehicleJourney>
+      <OperatorRef>CAL</OperatorRef>
+      <OperatingProfile>
+        <RegularDayType>
+          <DaysOfWeek>
             <Saturday />
           </DaysOfWeek>
         </RegularDayType>
         <SpecialDaysOperation>
           <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
             <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
@@ -1793,16 +378,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98568</VehicleJourneyCode>
+      <VehicleJourneyCode>76698</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -1819,34 +466,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -1986,16 +605,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98569</VehicleJourneyCode>
+      <VehicleJourneyCode>76699</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -2012,34 +693,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -2179,16 +832,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98570</VehicleJourneyCode>
+      <VehicleJourneyCode>76700</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -2205,34 +920,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -2372,16 +1059,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98571</VehicleJourneyCode>
+      <VehicleJourneyCode>76701</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -2398,34 +1147,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -2565,16 +1286,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98572</VehicleJourneyCode>
+      <VehicleJourneyCode>76702</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -2591,34 +1374,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-02</StartDate>
-              <EndDate>2017-04-02</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-09</StartDate>
-              <EndDate>2017-04-09</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-16</StartDate>
-              <EndDate>2017-04-16</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-23</StartDate>
-              <EndDate>2017-04-23</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -2758,16 +1513,78 @@
               <StartDate>2018-01-14</StartDate>
               <EndDate>2018-01-14</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-21</StartDate>
+              <EndDate>2018-01-21</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-28</StartDate>
+              <EndDate>2018-01-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-04</StartDate>
+              <EndDate>2018-02-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-11</StartDate>
+              <EndDate>2018-02-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-18</StartDate>
+              <EndDate>2018-02-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-25</StartDate>
+              <EndDate>2018-02-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-04</StartDate>
+              <EndDate>2018-03-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-11</StartDate>
+              <EndDate>2018-03-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-18</StartDate>
+              <EndDate>2018-03-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-25</StartDate>
+              <EndDate>2018-03-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-01</StartDate>
+              <EndDate>2018-04-01</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-08</StartDate>
+              <EndDate>2018-04-08</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-15</StartDate>
+              <EndDate>2018-04-15</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-22</StartDate>
+              <EndDate>2018-04-22</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-29</StartDate>
+              <EndDate>2018-04-29</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-06</StartDate>
+              <EndDate>2018-05-06</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-13</StartDate>
+              <EndDate>2018-05-13</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98580</VehicleJourneyCode>
+      <VehicleJourneyCode>76706</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -2784,34 +1601,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-02</StartDate>
-              <EndDate>2017-04-02</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-09</StartDate>
-              <EndDate>2017-04-09</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-16</StartDate>
-              <EndDate>2017-04-16</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-23</StartDate>
-              <EndDate>2017-04-23</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -2951,16 +1740,78 @@
               <StartDate>2018-01-14</StartDate>
               <EndDate>2018-01-14</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-21</StartDate>
+              <EndDate>2018-01-21</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-28</StartDate>
+              <EndDate>2018-01-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-04</StartDate>
+              <EndDate>2018-02-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-11</StartDate>
+              <EndDate>2018-02-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-18</StartDate>
+              <EndDate>2018-02-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-25</StartDate>
+              <EndDate>2018-02-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-04</StartDate>
+              <EndDate>2018-03-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-11</StartDate>
+              <EndDate>2018-03-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-18</StartDate>
+              <EndDate>2018-03-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-25</StartDate>
+              <EndDate>2018-03-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-01</StartDate>
+              <EndDate>2018-04-01</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-08</StartDate>
+              <EndDate>2018-04-08</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-15</StartDate>
+              <EndDate>2018-04-15</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-22</StartDate>
+              <EndDate>2018-04-22</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-29</StartDate>
+              <EndDate>2018-04-29</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-06</StartDate>
+              <EndDate>2018-05-06</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-13</StartDate>
+              <EndDate>2018-05-13</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98581</VehicleJourneyCode>
+      <VehicleJourneyCode>76707</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -2977,34 +1828,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-02</StartDate>
-              <EndDate>2017-04-02</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-09</StartDate>
-              <EndDate>2017-04-09</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-16</StartDate>
-              <EndDate>2017-04-16</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-23</StartDate>
-              <EndDate>2017-04-23</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -3144,16 +1967,78 @@
               <StartDate>2018-01-14</StartDate>
               <EndDate>2018-01-14</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-21</StartDate>
+              <EndDate>2018-01-21</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-28</StartDate>
+              <EndDate>2018-01-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-04</StartDate>
+              <EndDate>2018-02-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-11</StartDate>
+              <EndDate>2018-02-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-18</StartDate>
+              <EndDate>2018-02-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-25</StartDate>
+              <EndDate>2018-02-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-04</StartDate>
+              <EndDate>2018-03-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-11</StartDate>
+              <EndDate>2018-03-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-18</StartDate>
+              <EndDate>2018-03-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-25</StartDate>
+              <EndDate>2018-03-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-01</StartDate>
+              <EndDate>2018-04-01</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-08</StartDate>
+              <EndDate>2018-04-08</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-15</StartDate>
+              <EndDate>2018-04-15</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-22</StartDate>
+              <EndDate>2018-04-22</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-29</StartDate>
+              <EndDate>2018-04-29</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-06</StartDate>
+              <EndDate>2018-05-06</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-13</StartDate>
+              <EndDate>2018-05-13</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98582</VehicleJourneyCode>
+      <VehicleJourneyCode>76708</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -3170,34 +2055,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-02</StartDate>
-              <EndDate>2017-04-02</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-09</StartDate>
-              <EndDate>2017-04-09</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-16</StartDate>
-              <EndDate>2017-04-16</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-23</StartDate>
-              <EndDate>2017-04-23</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -3337,16 +2194,78 @@
               <StartDate>2018-01-14</StartDate>
               <EndDate>2018-01-14</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-21</StartDate>
+              <EndDate>2018-01-21</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-28</StartDate>
+              <EndDate>2018-01-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-04</StartDate>
+              <EndDate>2018-02-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-11</StartDate>
+              <EndDate>2018-02-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-18</StartDate>
+              <EndDate>2018-02-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-25</StartDate>
+              <EndDate>2018-02-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-04</StartDate>
+              <EndDate>2018-03-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-11</StartDate>
+              <EndDate>2018-03-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-18</StartDate>
+              <EndDate>2018-03-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-25</StartDate>
+              <EndDate>2018-03-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-01</StartDate>
+              <EndDate>2018-04-01</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-08</StartDate>
+              <EndDate>2018-04-08</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-15</StartDate>
+              <EndDate>2018-04-15</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-22</StartDate>
+              <EndDate>2018-04-22</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-29</StartDate>
+              <EndDate>2018-04-29</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-06</StartDate>
+              <EndDate>2018-05-06</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-13</StartDate>
+              <EndDate>2018-05-13</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98583</VehicleJourneyCode>
+      <VehicleJourneyCode>76709</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -3360,16 +2279,8 @@
             <Friday />
           </DaysOfWeek>
         </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98586</VehicleJourneyCode>
+      <VehicleJourneyCode>76712</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -3387,16 +2298,8 @@
             <Friday />
           </DaysOfWeek>
         </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98592</VehicleJourneyCode>
+      <VehicleJourneyCode>76713</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -3414,16 +2317,8 @@
             <Friday />
           </DaysOfWeek>
         </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98593</VehicleJourneyCode>
+      <VehicleJourneyCode>76714</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -3441,16 +2336,8 @@
             <Friday />
           </DaysOfWeek>
         </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98594</VehicleJourneyCode>
+      <VehicleJourneyCode>76715</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -3468,16 +2355,8 @@
             <Friday />
           </DaysOfWeek>
         </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98595</VehicleJourneyCode>
+      <VehicleJourneyCode>76716</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -3495,16 +2374,8 @@
             <Friday />
           </DaysOfWeek>
         </RegularDayType>
-        <SpecialDaysOperation>
-          <DaysOfNonOperation>
-            <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
-            </DateRange>
-          </DaysOfNonOperation>
-        </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98596</VehicleJourneyCode>
+      <VehicleJourneyCode>76717</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -3520,34 +2391,6 @@
         </RegularDayType>
         <SpecialDaysOperation>
           <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
             <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
@@ -3688,16 +2531,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98607</VehicleJourneyCode>
+      <VehicleJourneyCode>76723</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -3714,34 +2619,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -3881,16 +2758,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98608</VehicleJourneyCode>
+      <VehicleJourneyCode>76724</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -3907,34 +2846,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -4074,16 +2985,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98609</VehicleJourneyCode>
+      <VehicleJourneyCode>76725</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -4100,34 +3073,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -4267,16 +3212,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98610</VehicleJourneyCode>
+      <VehicleJourneyCode>76726</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -4293,34 +3300,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-01</StartDate>
-              <EndDate>2017-04-01</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-08</StartDate>
-              <EndDate>2017-04-08</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-15</StartDate>
-              <EndDate>2017-04-15</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-22</StartDate>
-              <EndDate>2017-04-22</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -4460,16 +3439,78 @@
               <StartDate>2018-01-13</StartDate>
               <EndDate>2018-01-13</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-20</StartDate>
+              <EndDate>2018-01-20</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-27</StartDate>
+              <EndDate>2018-01-27</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-03</StartDate>
+              <EndDate>2018-02-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-10</StartDate>
+              <EndDate>2018-02-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-17</StartDate>
+              <EndDate>2018-02-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-24</StartDate>
+              <EndDate>2018-02-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-03</StartDate>
+              <EndDate>2018-03-03</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-10</StartDate>
+              <EndDate>2018-03-10</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-17</StartDate>
+              <EndDate>2018-03-17</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-24</StartDate>
+              <EndDate>2018-03-24</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-31</StartDate>
+              <EndDate>2018-03-31</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-07</StartDate>
+              <EndDate>2018-04-07</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-14</StartDate>
+              <EndDate>2018-04-14</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-21</StartDate>
+              <EndDate>2018-04-21</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-28</StartDate>
+              <EndDate>2018-04-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-05</StartDate>
+              <EndDate>2018-05-05</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-12</StartDate>
+              <EndDate>2018-05-12</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98611</VehicleJourneyCode>
+      <VehicleJourneyCode>76727</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -4486,34 +3527,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-02</StartDate>
-              <EndDate>2017-04-02</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-09</StartDate>
-              <EndDate>2017-04-09</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-16</StartDate>
-              <EndDate>2017-04-16</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-23</StartDate>
-              <EndDate>2017-04-23</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -4653,16 +3666,78 @@
               <StartDate>2018-01-14</StartDate>
               <EndDate>2018-01-14</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-21</StartDate>
+              <EndDate>2018-01-21</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-28</StartDate>
+              <EndDate>2018-01-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-04</StartDate>
+              <EndDate>2018-02-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-11</StartDate>
+              <EndDate>2018-02-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-18</StartDate>
+              <EndDate>2018-02-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-25</StartDate>
+              <EndDate>2018-02-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-04</StartDate>
+              <EndDate>2018-03-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-11</StartDate>
+              <EndDate>2018-03-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-18</StartDate>
+              <EndDate>2018-03-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-25</StartDate>
+              <EndDate>2018-03-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-01</StartDate>
+              <EndDate>2018-04-01</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-08</StartDate>
+              <EndDate>2018-04-08</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-15</StartDate>
+              <EndDate>2018-04-15</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-22</StartDate>
+              <EndDate>2018-04-22</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-29</StartDate>
+              <EndDate>2018-04-29</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-06</StartDate>
+              <EndDate>2018-05-06</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-13</StartDate>
+              <EndDate>2018-05-13</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98620</VehicleJourneyCode>
+      <VehicleJourneyCode>76732</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -4679,34 +3754,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-02</StartDate>
-              <EndDate>2017-04-02</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-09</StartDate>
-              <EndDate>2017-04-09</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-16</StartDate>
-              <EndDate>2017-04-16</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-23</StartDate>
-              <EndDate>2017-04-23</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -4846,16 +3893,78 @@
               <StartDate>2018-01-14</StartDate>
               <EndDate>2018-01-14</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-21</StartDate>
+              <EndDate>2018-01-21</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-28</StartDate>
+              <EndDate>2018-01-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-04</StartDate>
+              <EndDate>2018-02-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-11</StartDate>
+              <EndDate>2018-02-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-18</StartDate>
+              <EndDate>2018-02-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-25</StartDate>
+              <EndDate>2018-02-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-04</StartDate>
+              <EndDate>2018-03-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-11</StartDate>
+              <EndDate>2018-03-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-18</StartDate>
+              <EndDate>2018-03-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-25</StartDate>
+              <EndDate>2018-03-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-01</StartDate>
+              <EndDate>2018-04-01</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-08</StartDate>
+              <EndDate>2018-04-08</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-15</StartDate>
+              <EndDate>2018-04-15</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-22</StartDate>
+              <EndDate>2018-04-22</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-29</StartDate>
+              <EndDate>2018-04-29</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-06</StartDate>
+              <EndDate>2018-05-06</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-13</StartDate>
+              <EndDate>2018-05-13</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98621</VehicleJourneyCode>
+      <VehicleJourneyCode>76733</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -4872,34 +3981,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-02</StartDate>
-              <EndDate>2017-04-02</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-09</StartDate>
-              <EndDate>2017-04-09</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-16</StartDate>
-              <EndDate>2017-04-16</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-23</StartDate>
-              <EndDate>2017-04-23</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -5039,16 +4120,78 @@
               <StartDate>2018-01-14</StartDate>
               <EndDate>2018-01-14</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-21</StartDate>
+              <EndDate>2018-01-21</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-28</StartDate>
+              <EndDate>2018-01-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-04</StartDate>
+              <EndDate>2018-02-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-11</StartDate>
+              <EndDate>2018-02-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-18</StartDate>
+              <EndDate>2018-02-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-25</StartDate>
+              <EndDate>2018-02-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-04</StartDate>
+              <EndDate>2018-03-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-11</StartDate>
+              <EndDate>2018-03-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-18</StartDate>
+              <EndDate>2018-03-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-25</StartDate>
+              <EndDate>2018-03-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-01</StartDate>
+              <EndDate>2018-04-01</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-08</StartDate>
+              <EndDate>2018-04-08</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-15</StartDate>
+              <EndDate>2018-04-15</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-22</StartDate>
+              <EndDate>2018-04-22</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-29</StartDate>
+              <EndDate>2018-04-29</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-06</StartDate>
+              <EndDate>2018-05-06</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-13</StartDate>
+              <EndDate>2018-05-13</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98622</VehicleJourneyCode>
+      <VehicleJourneyCode>76734</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -5065,34 +4208,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-02</StartDate>
-              <EndDate>2017-04-02</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-09</StartDate>
-              <EndDate>2017-04-09</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-16</StartDate>
-              <EndDate>2017-04-16</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-23</StartDate>
-              <EndDate>2017-04-23</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -5232,16 +4347,78 @@
               <StartDate>2018-01-14</StartDate>
               <EndDate>2018-01-14</EndDate>
             </DateRange>
-          </DaysOfOperation>
-          <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
-              <EndDate>2017-03-30</EndDate>
+              <StartDate>2018-01-21</StartDate>
+              <EndDate>2018-01-21</EndDate>
             </DateRange>
-          </DaysOfNonOperation>
+            <DateRange>
+              <StartDate>2018-01-28</StartDate>
+              <EndDate>2018-01-28</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-04</StartDate>
+              <EndDate>2018-02-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-11</StartDate>
+              <EndDate>2018-02-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-18</StartDate>
+              <EndDate>2018-02-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-02-25</StartDate>
+              <EndDate>2018-02-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-04</StartDate>
+              <EndDate>2018-03-04</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-11</StartDate>
+              <EndDate>2018-03-11</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-18</StartDate>
+              <EndDate>2018-03-18</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-03-25</StartDate>
+              <EndDate>2018-03-25</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-01</StartDate>
+              <EndDate>2018-04-01</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-08</StartDate>
+              <EndDate>2018-04-08</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-15</StartDate>
+              <EndDate>2018-04-15</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-22</StartDate>
+              <EndDate>2018-04-22</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-04-29</StartDate>
+              <EndDate>2018-04-29</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-06</StartDate>
+              <EndDate>2018-05-06</EndDate>
+            </DateRange>
+            <DateRange>
+              <StartDate>2018-05-13</StartDate>
+              <EndDate>2018-05-13</EndDate>
+            </DateRange>
+          </DaysOfOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98623</VehicleJourneyCode>
+      <VehicleJourneyCode>76735</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -5262,7 +4439,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5272,7 +4449,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98559</VehicleJourneyCode>
+      <VehicleJourneyCode>76693</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5293,7 +4470,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5303,7 +4480,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98560</VehicleJourneyCode>
+      <VehicleJourneyCode>76694</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5323,7 +4500,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5333,7 +4510,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98561</VehicleJourneyCode>
+      <VehicleJourneyCode>76695</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5353,7 +4530,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5363,7 +4540,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98562</VehicleJourneyCode>
+      <VehicleJourneyCode>76696</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5382,7 +4559,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5392,7 +4569,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98563</VehicleJourneyCode>
+      <VehicleJourneyCode>76697</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5408,18 +4585,6 @@
         </RegularDayType>
         <SpecialDaysOperation>
           <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
             <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
@@ -5499,7 +4664,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5509,7 +4674,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98573</VehicleJourneyCode>
+      <VehicleJourneyCode>76703</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5526,18 +4691,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -5616,7 +4769,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5626,7 +4779,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98574</VehicleJourneyCode>
+      <VehicleJourneyCode>76704</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5643,18 +4796,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -5733,7 +4874,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5743,7 +4884,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98575</VehicleJourneyCode>
+      <VehicleJourneyCode>76705</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5759,18 +4900,6 @@
         </RegularDayType>
         <SpecialDaysOperation>
           <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
             <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
@@ -5850,7 +4979,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5860,7 +4989,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98584</VehicleJourneyCode>
+      <VehicleJourneyCode>76710</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5877,18 +5006,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -5967,7 +5084,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -5977,7 +5094,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98585</VehicleJourneyCode>
+      <VehicleJourneyCode>76711</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-3</JourneyPatternRef>
@@ -5998,7 +5115,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6008,7 +5125,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98597</VehicleJourneyCode>
+      <VehicleJourneyCode>76718</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6029,7 +5146,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6039,7 +5156,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98598</VehicleJourneyCode>
+      <VehicleJourneyCode>76719</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6059,7 +5176,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6069,7 +5186,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98599</VehicleJourneyCode>
+      <VehicleJourneyCode>76720</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6088,7 +5205,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6098,7 +5215,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98600</VehicleJourneyCode>
+      <VehicleJourneyCode>76721</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6117,7 +5234,7 @@
         <SpecialDaysOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6127,7 +5244,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98601</VehicleJourneyCode>
+      <VehicleJourneyCode>76722</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6144,18 +5261,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -6234,7 +5339,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6244,7 +5349,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98612</VehicleJourneyCode>
+      <VehicleJourneyCode>76728</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6261,18 +5366,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -6351,7 +5444,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6361,7 +5454,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98613</VehicleJourneyCode>
+      <VehicleJourneyCode>76729</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6378,18 +5471,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -6468,7 +5549,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6478,7 +5559,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98614</VehicleJourneyCode>
+      <VehicleJourneyCode>76730</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6495,18 +5576,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-29</StartDate>
-              <EndDate>2017-04-29</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-06</StartDate>
-              <EndDate>2017-05-06</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-13</StartDate>
-              <EndDate>2017-05-13</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-20</StartDate>
               <EndDate>2017-05-20</EndDate>
             </DateRange>
@@ -6585,7 +5654,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6595,7 +5664,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98615</VehicleJourneyCode>
+      <VehicleJourneyCode>76731</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6612,18 +5681,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -6702,7 +5759,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6712,7 +5769,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98624</VehicleJourneyCode>
+      <VehicleJourneyCode>76736</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>
@@ -6729,18 +5786,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-04-30</StartDate>
-              <EndDate>2017-04-30</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-07</StartDate>
-              <EndDate>2017-05-07</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-14</StartDate>
-              <EndDate>2017-05-14</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-05-21</StartDate>
               <EndDate>2017-05-21</EndDate>
             </DateRange>
@@ -6819,7 +5864,7 @@
           </DaysOfOperation>
           <DaysOfNonOperation>
             <DateRange>
-              <StartDate>2017-01-22</StartDate>
+              <StartDate>2017-03-31</StartDate>
               <EndDate>2017-04-26</EndDate>
             </DateRange>
             <DateRange>
@@ -6829,7 +5874,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>98625</VehicleJourneyCode>
+      <VehicleJourneyCode>76737</VehicleJourneyCode>
       <ServiceRef>FSACM05</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05-4</JourneyPatternRef>

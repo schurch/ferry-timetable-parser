@@ -72,16 +72,18 @@ routeSectionToSQLStatements routeSection =
         "INSERT INTO RouteSection (RouteSectionId) VALUES ('%s');"
         (routeSectionId routeSection)
     routeLinkToSQL = routeLinkToSQLStatement (routeSectionId routeSection)
-    routeLinkStatements = map routeLinkToSQL $ routeLinks routeSection
+    routeLinksWithIndex = zip [0 ..] (routeLinks routeSection)
+    routeLinkStatements = map routeLinkToSQL routeLinksWithIndex
 
-routeLinkToSQLStatement :: String -> RouteLink -> String
-routeLinkToSQLStatement routeSectionId routeLink =
+routeLinkToSQLStatement :: String -> (Int, RouteLink) -> String
+routeLinkToSQLStatement routeSectionId (order, routeLink) =
   printf
-    "INSERT INTO RouteLink (RouteLinkId, RouteSectionId, FromStopPointRef, ToStopPointRef, RouteDirection) VALUES ('%s', '%s', '%s', '%s', '%s');"
+    "INSERT INTO RouteLink (RouteLinkId, RouteSectionId, FromStopPointRef, ToStopPointRef, `Order`, RouteDirection) VALUES ('%s', '%s', '%s', '%s', %s, '%s');"
     (routeLinkId routeLink)
     routeSectionId
     (fromStopPointRef routeLink)
     (toStopPointRef routeLink)
+    (show order)
     (routeDirection routeLink)
 
 flattenRouteSectionStatement :: RouteSectionStatement -> [String]
@@ -105,7 +107,7 @@ journeyPatternSectionToSQLStatement journeyPatternSection =
   where
     journeyPatternSectionStatement =
       printf
-        "INSERT INTO JourneyPatternSection (JourneyPatterSectionId) VALUES ('%s');"
+        "INSERT INTO JourneyPatternSection (JourneyPatternSectionId) VALUES ('%s');"
         (journeyPatterSectionId journeyPatternSection)
     journeyPatternTimingToSQL =
       journeyPatternTimingLinkToSQLStatement
@@ -120,8 +122,8 @@ journeyPatternTimingLinkToSQLStatement :: String
 journeyPatternTimingLinkToSQLStatement journeyPatternSectionId journeyPatternTimingLink =
   printf
     "INSERT INTO JourneyPatternTimingLink \
-    \(JourneyPatternTimingLinkId, JourneyPatterSectionId, JourneyPatternFromStopPointRef, JourneyPatternFromTimingStatus, JourneyPatternToStopPointsRef, JourneyPatternToTimingStatus, RouteLinkRef, JourneyDirection, RunTime) \
-    \VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s');"
+    \(JourneyPatternTimingLinkId, JourneyPatternSectionId, JourneyPatternFromStopPointRef, JourneyPatternFromTimingStatus, JourneyPatternToStopPointsRef, JourneyPatternToTimingStatus, RouteLinkRef, JourneyDirection, RunTime, WaitTime) \
+    \VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s');"
     (journeyPatternTimingLinkId journeyPatternTimingLink)
     journeyPatternSectionId
     (journeyPatternFromStopPointRef journeyPatternTimingLink)
@@ -131,6 +133,7 @@ journeyPatternTimingLinkToSQLStatement journeyPatternSectionId journeyPatternTim
     (routeLinkRef journeyPatternTimingLink)
     (journeyDirection journeyPatternTimingLink)
     (runTime journeyPatternTimingLink)
+    (journeyPatternFromWaitTime journeyPatternTimingLink)
 
 flattenJourneyPatternSectionStatement :: JourneyPatternSectionStatement
                                       -> [String]
@@ -168,7 +171,9 @@ serviceToSQLStatement service =
     start =
       fromMaybe "0" $ show . dateToInt <$> (startDate (operatingPeriod service))
     end =
-      fromMaybe "0" $ show . dateToInt <$> (endDate (operatingPeriod service))
+      fromMaybe "0" $
+      show . epochTimeEndOfDay . dateToInt <$>
+      (endDate (operatingPeriod service))
     lineStatements =
       map (lineToSQLStatement (serviceCode service)) (Types.lines service)
     journeyPatternStatements =
@@ -259,7 +264,8 @@ vehicleJourneyOperationRangeToSQLStatement rangeTableName vehicleJourneyCode dat
     rangeTableName
     vehicleJourneyCode
     (fromMaybe "0" $ show . dateToInt <$> (startDate dateRange))
-    (fromMaybe "0" $ show . dateToInt <$> (startDate dateRange))
+    (fromMaybe "0" $
+     show . epochTimeEndOfDay . dateToInt <$> (endDate dateRange))
 
 flattenVehicleJourneyStatements :: VehicleJourneySectionStatement -> [String]
 flattenVehicleJourneyStatements (vehicleJourneyStatement, daysOfOperationStatements, daysOfNonOperationStatements) =
@@ -269,6 +275,9 @@ flattenVehicleJourneyStatements (vehicleJourneyStatement, daysOfOperationStateme
 -- Helpers
 dateToInt :: UTCTime -> Int
 dateToInt date = (floor $ utcTimeToPOSIXSeconds date) :: Int
+
+epochTimeEndOfDay :: Int -> Int
+epochTimeEndOfDay epochTime = epochTime + 86399
 
 boolToInt :: Bool -> String
 boolToInt bool =

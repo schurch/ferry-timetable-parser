@@ -121,6 +121,9 @@ elementToJourneyPatternTimingLink :: Element -> JourneyPatternTimingLink
 elementToJourneyPatternTimingLink element =
   JourneyPatternTimingLink
   { journeyPatternTimingLinkId = attrValue "id" element
+  , journeyPatternFromWaitTime =
+      fromMaybe "" $
+      strContent <$> (findChild "From" element >>= findChild "WaitTime")
   , journeyPatternFromStopPointRef =
       fromMaybe "" $
       strContent <$> (findChild "From" element >>= findChild "StopPointRef")

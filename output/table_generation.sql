@@ -29,6 +29,7 @@ CREATE TABLE "RouteLink" (
 	"RouteSectionId" TEXT NOT NULL REFERENCES "RouteSection"("RouteSectionId"),
 	"FromStopPointRef" TEXT NOT NULL REFERENCES "AnnotatedStopPointRef"("StopPointRef"),
 	"ToStopPointRef" TEXT NOT NULL REFERENCES "AnnotatedStopPointRef"("StopPointRef"),
+	"Order" INTEGER NOT NULL,
 	"RouteDirection" TEXT NOT NULL
 );
 
@@ -39,19 +40,20 @@ CREATE TABLE "Route" (
 );
 
 CREATE TABLE "JourneyPatternSection" (
-	"JourneyPatterSectionId" TEXT PRIMARY KEY NOT NULL UNIQUE
+	"JourneyPatternSectionId" TEXT PRIMARY KEY NOT NULL UNIQUE
 );
 
 CREATE TABLE "JourneyPatternTimingLink" (
 	"JourneyPatternTimingLinkId" TEXT PRIMARY KEY NOT NULL UNIQUE,
-	"JourneyPatterSectionId" TEXT NOT NULL REFERENCES "JourneyPatternSection"("JourneyPatterSectionId"),
+	"JourneyPatternSectionId" TEXT NOT NULL REFERENCES "JourneyPatternSection"("JourneyPatterSectionId"),
 	"JourneyPatternFromStopPointRef" TEXT NOT NULL REFERENCES "AnnotatedStopPointRef"("StopPointRef"),
 	"JourneyPatternFromTimingStatus" TEXT NOT NULL,
 	"JourneyPatternToStopPointsRef" TEXT NOT NULL REFERENCES "AnnotatedStopPointRef"("StopPointRef"),
 	"JourneyPatternToTimingStatus" TEXT NOT NULL,
 	"RouteLinkRef" TEXT NOT NULL REFERENCES "RouteLink"("RouteLinkId"),
 	"JourneyDirection" TEXT NOT NULL,
-	"RunTime" TEXT NOT NULL
+	"RunTime" TEXT NOT NULL,
+	"WaitTime" TEXT NULL
 );
 
 CREATE TABLE "Operator" (

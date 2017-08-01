@@ -42,6 +42,7 @@ data JourneyPatternSection = JourneyPatternSection
 
 data JourneyPatternTimingLink = JourneyPatternTimingLink
   { journeyPatternTimingLinkId :: String
+  , journeyPatternFromWaitTime :: String
   , journeyPatternFromStopPointRef :: String
   , journeyPatternFromTimingStatus :: String
   , journeyPatternToStopPointsRef :: String
