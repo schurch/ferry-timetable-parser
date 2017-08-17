@@ -24,6 +24,22 @@ ToStopPointRef AS
 (
     SELECT *
     FROM AnnotatedStopPointRef ASPR
+),
+
+MultiJourneyDepatures AS 
+(
+	SELECT JPTL.JourneyPatternTimingLinkId
+    FROM RouteLink RL
+    INNER JOIN JourneyPatternTimingLink JPTL ON RL.RouteLinkId = JPTL.RouteLinkRef
+    WHERE
+    RL.FromStopPointRef = "9300BRB" 
+	AND RL.ToStopPointRef = "9300ARD"
+    AND RL.RouteSectionId IN
+    (
+        SELECT RL.RouteSectionId 
+        FROM RouteLink RL 
+        GROUP BY RL.RouteSectionId HAVING COUNT(*) > 1
+    )
 )
 
 SELECT FSPR.CommonName AS `From`, TSPR.CommonName AS `To`, VJ.DepatureHour AS Hour, VJ.DepatureMinute AS Minute, JPTL.RunTime AS RunTime
@@ -45,20 +61,5 @@ AND
     (VJ.VehicleJourneyCode IN VehicleJourneysOperatingToday)
 )
 AND VJ.VehicleJourneyCode NOT IN VehicleJourneysNotOperatingToday
-AND JPTL.JourneyPatternTimingLinkId NOT IN 
-(
-	-- Don't include multi journey depatures
-    SELECT JPTL.JourneyPatternTimingLinkId
-    FROM RouteLink RL
-    INNER JOIN JourneyPatternTimingLink JPTL ON RL.RouteLinkId = JPTL.RouteLinkRef
-    WHERE
-    RL.FromStopPointRef = "9300BRB" 
-	AND RL.ToStopPointRef = "9300ARD"
-    AND RL.RouteSectionId IN
-    (
-        SELECT RL.RouteSectionId 
-        FROM RouteLink RL 
-        GROUP BY RL.RouteSectionId HAVING COUNT(*) > 1
-    )
-)
+AND JPTL.JourneyPatternTimingLinkId NOT IN MultiJourneyDepatures
 ORDER BY VJ.DepatureHour, VJ.DepatureMinute

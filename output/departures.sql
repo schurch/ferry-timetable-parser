@@ -1474,3 +1474,6 @@ INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('7
 INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond) VALUES ('76742', 'FSACM05A', '0', 'JPS_FSACM05A-6', 'CAL', 0, 0, 0, 1, 1, 0, 0, 18, 40, 0);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('76742', 1490918400, 1493251199);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('76742', 1506297600, 2524607999);
+UPDATE AnnotatedStopPointRef SET CommonName = 'Brodick' WHERE StopPointRef = '9300BRB';
+UPDATE AnnotatedStopPointRef SET CommonName = 'Ardrossan' WHERE StopPointRef = '9300ARD';
+UPDATE AnnotatedStopPointRef SET CommonName = 'Campbeltown' WHERE StopPointRef = '9300CPB';
