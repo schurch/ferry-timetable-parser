@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TransXChange xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" CreationDateTime="2017-07-17T12:08:00-00:00" ModificationDateTime="2017-07-17T12:08:00-00:00" Modification="new" RevisionNumber="0" FileName="SVRFSACM05A.xml" SchemaVersion="2.1" RegistrationDocument="false" xmlns="http://www.transxchange.org.uk/">
+<TransXChange xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.transxchange.org.uk/ http://www.transxchange.org.uk/schema/2.1/TransXChange_general.xsd" CreationDateTime="2017-08-14T13:07:00-00:00" ModificationDateTime="2017-08-14T13:07:00-00:00" Modification="new" RevisionNumber="0" FileName="SVRFSACM05A.xml" SchemaVersion="2.1" RegistrationDocument="false" xmlns="http://www.transxchange.org.uk/">
   <StopPoints>
     <AnnotatedStopPointRef>
       <StopPointRef>9300CPB</StopPointRef>
@@ -16,7 +16,7 @@
   </StopPoints>
   <RouteSections>
     <RouteSection id="FSACM05A001">
-      <RouteLink id="FSACM05A001_269702">
+      <RouteLink id="FSACM05A001_289687">
         <From>
           <StopPointRef>9300CPB</StopPointRef>
         </From>
@@ -27,7 +27,7 @@
       </RouteLink>
     </RouteSection>
     <RouteSection id="FSACM05A002">
-      <RouteLink id="FSACM05A002_269704">
+      <RouteLink id="FSACM05A002_289689">
         <From>
           <StopPointRef>9300CPB</StopPointRef>
         </From>
@@ -36,7 +36,7 @@
         </To>
         <Direction>inbound</Direction>
       </RouteLink>
-      <RouteLink id="FSACM05A002_269705">
+      <RouteLink id="FSACM05A002_289690">
         <From>
           <StopPointRef>9300BRB</StopPointRef>
         </From>
@@ -47,7 +47,7 @@
       </RouteLink>
     </RouteSection>
     <RouteSection id="FSACM05A003">
-      <RouteLink id="FSACM05A003_269707">
+      <RouteLink id="FSACM05A003_289692">
         <From>
           <StopPointRef>9300ARD</StopPointRef>
         </From>
@@ -77,7 +77,7 @@
   </Routes>
   <JourneyPatternSections>
     <JourneyPatternSection id="JPS_FSACM05A-4">
-      <JourneyPatternTimingLink id="JPS_FSACM05A-4_269702">
+      <JourneyPatternTimingLink id="JPS_FSACM05A-4_289687">
         <From>
           <StopPointRef>9300CPB</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
@@ -86,13 +86,13 @@
           <StopPointRef>9300ARD</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
         </To>
-        <RouteLinkRef>FSACM05A001_269702</RouteLinkRef>
+        <RouteLinkRef>FSACM05A001_289687</RouteLinkRef>
         <Direction>inbound</Direction>
         <RunTime>PT9600S</RunTime>
       </JourneyPatternTimingLink>
     </JourneyPatternSection>
     <JourneyPatternSection id="JPS_FSACM05A-5">
-      <JourneyPatternTimingLink id="JPS_FSACM05A-5_269704">
+      <JourneyPatternTimingLink id="JPS_FSACM05A-5_289689">
         <From>
           <StopPointRef>9300CPB</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
@@ -101,11 +101,11 @@
           <StopPointRef>9300BRB</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
         </To>
-        <RouteLinkRef>FSACM05A002_269704</RouteLinkRef>
+        <RouteLinkRef>FSACM05A002_289689</RouteLinkRef>
         <Direction>inbound</Direction>
         <RunTime>PT8400S</RunTime>
       </JourneyPatternTimingLink>
-      <JourneyPatternTimingLink id="JPS_FSACM05A-5_269705">
+      <JourneyPatternTimingLink id="JPS_FSACM05A-5_289690">
         <From>
           <WaitTime>PT1500S</WaitTime>
           <StopPointRef>9300BRB</StopPointRef>
@@ -115,13 +115,13 @@
           <StopPointRef>9300ARD</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
         </To>
-        <RouteLinkRef>FSACM05A002_269705</RouteLinkRef>
+        <RouteLinkRef>FSACM05A002_289690</RouteLinkRef>
         <Direction>inbound</Direction>
         <RunTime>PT3300S</RunTime>
       </JourneyPatternTimingLink>
     </JourneyPatternSection>
     <JourneyPatternSection id="JPS_FSACM05A-6">
-      <JourneyPatternTimingLink id="JPS_FSACM05A-6_269707">
+      <JourneyPatternTimingLink id="JPS_FSACM05A-6_289692">
         <From>
           <StopPointRef>9300ARD</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
@@ -130,7 +130,7 @@
           <StopPointRef>9300CPB</StopPointRef>
           <TimingStatus>PTP</TimingStatus>
         </To>
-        <RouteLinkRef>FSACM05A003_269707</RouteLinkRef>
+        <RouteLinkRef>FSACM05A003_289692</RouteLinkRef>
         <Direction>outbound</Direction>
         <RunTime>PT9600S</RunTime>
       </JourneyPatternTimingLink>
@@ -201,7 +201,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>76738</VehicleJourneyCode>
+      <VehicleJourneyCode>96943</VehicleJourneyCode>
       <ServiceRef>FSACM05A</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05A-4</JourneyPatternRef>
@@ -217,22 +217,6 @@
         </RegularDayType>
         <SpecialDaysOperation>
           <DaysOfOperation>
-            <DateRange>
-              <StartDate>2017-05-20</StartDate>
-              <EndDate>2017-05-20</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-27</StartDate>
-              <EndDate>2017-05-27</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-06-03</StartDate>
-              <EndDate>2017-06-03</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-06-10</StartDate>
-              <EndDate>2017-06-10</EndDate>
-            </DateRange>
             <DateRange>
               <StartDate>2017-06-17</StartDate>
               <EndDate>2017-06-17</EndDate>
@@ -306,7 +290,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>76739</VehicleJourneyCode>
+      <VehicleJourneyCode>96944</VehicleJourneyCode>
       <ServiceRef>FSACM05A</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05A-5</JourneyPatternRef>
@@ -323,22 +307,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-05-21</StartDate>
-              <EndDate>2017-05-21</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-28</StartDate>
-              <EndDate>2017-05-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-06-04</StartDate>
-              <EndDate>2017-06-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-06-11</StartDate>
-              <EndDate>2017-06-11</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-06-18</StartDate>
               <EndDate>2017-06-18</EndDate>
             </DateRange>
@@ -411,7 +379,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>76740</VehicleJourneyCode>
+      <VehicleJourneyCode>96945</VehicleJourneyCode>
       <ServiceRef>FSACM05A</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05A-4</JourneyPatternRef>
@@ -428,22 +396,6 @@
         <SpecialDaysOperation>
           <DaysOfOperation>
             <DateRange>
-              <StartDate>2017-05-21</StartDate>
-              <EndDate>2017-05-21</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-05-28</StartDate>
-              <EndDate>2017-05-28</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-06-04</StartDate>
-              <EndDate>2017-06-04</EndDate>
-            </DateRange>
-            <DateRange>
-              <StartDate>2017-06-11</StartDate>
-              <EndDate>2017-06-11</EndDate>
-            </DateRange>
-            <DateRange>
               <StartDate>2017-06-18</StartDate>
               <EndDate>2017-06-18</EndDate>
             </DateRange>
@@ -516,7 +468,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>76741</VehicleJourneyCode>
+      <VehicleJourneyCode>96946</VehicleJourneyCode>
       <ServiceRef>FSACM05A</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05A-6</JourneyPatternRef>
@@ -544,7 +496,7 @@
           </DaysOfNonOperation>
         </SpecialDaysOperation>
       </OperatingProfile>
-      <VehicleJourneyCode>76742</VehicleJourneyCode>
+      <VehicleJourneyCode>96947</VehicleJourneyCode>
       <ServiceRef>FSACM05A</ServiceRef>
       <LineRef>0</LineRef>
       <JourneyPatternRef>JPS_FSACM05A-6</JourneyPatternRef>
