@@ -54,6 +54,7 @@ INNER JOIN ToStopPointRef TSPR ON TSPR.StopPointRef = JPTL.JourneyPatternToStopP
 WHERE VJ.Saturday = 1 
 AND JPTL.JourneyPatternFromStopPointRef = "9300BRB"
 AND JPTL.JourneyPatternToStopPointsRef = "9300ARD"
+AND S.CalMacServiceId = 5
 AND 
 (
     (strftime('%s','now') >= S.StartDate AND strftime('%s','now') <= S.EndDate)

@@ -71,7 +71,8 @@ CREATE TABLE "Service" (
 	"Origin" TEXT NOT NULL,
 	"Destination" TEXT NOT NULL,
 	"StartDate" INTEGER NOT NULL,
-	"EndDate" INTEGER NOT NULL
+	"EndDate" INTEGER NOT NULL,
+	"CalMacServiceId" INTEGER
 );
 
 CREATE TABLE "Line" (

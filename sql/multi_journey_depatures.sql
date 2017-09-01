@@ -49,7 +49,7 @@ INNER JOIN VehicleJourney VJ ON VJ.JourneyPatternRef = JP.JourneyPatternId
 INNER JOIN Service S ON S.ServiceCode = JP.ServiceRef
 INNER JOIN FromStopPointRef FSPR ON FSPR.StopPointRef = JPTL.JourneyPatternFromStopPointRef
 INNER JOIN ToStopPointRef TSPR ON TSPR.StopPointRef = JPTL.JourneyPatternToStopPointsRef
-WHERE VJ.Saturday = 1 
+WHERE VJ.Saturday = 1
 AND 
 (
     (strftime('%s','now') >= S.StartDate AND strftime('%s','now') <= S.EndDate)
