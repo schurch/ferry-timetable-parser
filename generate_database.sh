@@ -3,6 +3,7 @@
 stack build
 stack exec parser-exe "SVRFSACM05.xml"
 stack exec parser-exe "SVRFSACM05A.xml"
+stack exec parser-exe "SVRFSACM25.xml"
 
 cat output/table_generation.sql output/*.xml.sql output/post_updates.sql > output/departures.sql
 

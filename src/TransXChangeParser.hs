@@ -245,6 +245,12 @@ elementToVehicleJourney element =
   , daysOfWeek = fromMaybe [] weekDays
   , specialDaysOfOperation = fromMaybe [] operationDays
   , specialDaysOfNonOperation = fromMaybe [] nonOperationDays
+  , note =
+      fromMaybe "" $
+      strContent <$> (findChild "Note" element >>= findChild "NoteText")
+  , noteCode =
+      fromMaybe "" $
+      strContent <$> (findChild "Note" element >>= findChild "NoteCode")
   }
   where
     nonOperationDays = do

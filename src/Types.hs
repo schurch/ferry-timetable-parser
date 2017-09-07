@@ -96,6 +96,8 @@ data VehicleJourney = VehicleJourney
   , daysOfWeek :: [WeekDay]
   , specialDaysOfOperation :: [DateRange]
   , specialDaysOfNonOperation :: [DateRange]
+  , note :: String
+  , noteCode :: String
   } deriving (Show)
 
 data DateRange = DateRange

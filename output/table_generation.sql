@@ -103,7 +103,9 @@ CREATE TABLE "VehicleJourney" (
 	"Sunday" INTEGER NOT NULL,
 	"DepatureHour" INTEGER NOT NULL,
 	"DepatureMinute" INTEGER NOT NULL,
-	"DepatureSecond" INTEGER NOT NULL
+	"DepatureSecond" INTEGER NOT NULL,
+	"Note" TEXT NULL,
+	"NoteCode" TEXT NULL
 );
 
 CREATE TABLE "DayOfOperation" (

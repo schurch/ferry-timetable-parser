@@ -214,8 +214,8 @@ vehicleJourneyToSQLStatement vehicleJourney =
     vehicleJourneyStatement =
       printf
         "INSERT INTO VehicleJourney \
-      \(VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond) VALUES \
-      \('%s', '%s', '%s', '%s', '%s', %s, %s, %s, %s, %s, %s, %s, %d, %d, %d);"
+      \(VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond, Note, NoteCode) VALUES \
+      \('%s', '%s', '%s', '%s', '%s', %s, %s, %s, %s, %s, %s, %s, %d, %d, %d, '%s', '%s');"
         (vehicleJourneyCode vehicleJourney)
         (serviceRef vehicleJourney)
         (lineRef vehicleJourney)
@@ -231,6 +231,8 @@ vehicleJourneyToSQLStatement vehicleJourney =
         hour
         minute
         second
+        (note vehicleJourney)
+        (noteCode vehicleJourney)
     dateRangeToDayOfOperatation =
       vehicleJourneyOperationRangeToSQLStatement
         "DayOfOperation"

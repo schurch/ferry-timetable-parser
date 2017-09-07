@@ -27,10 +27,10 @@ INSERT INTO Line (LineId, ServiceRef, LineName) VALUES ('0', 'FSACM05A', 'CM5A')
 INSERT INTO JourneyPattern (JourneyPatternId, ServiceRef, JourneyPatternSectionRef, JourneyPatternDirection) VALUES ('JPS_FSACM05A-4', 'FSACM05A', 'JPS_FSACM05A-4', 'inbound');
 INSERT INTO JourneyPattern (JourneyPatternId, ServiceRef, JourneyPatternSectionRef, JourneyPatternDirection) VALUES ('JPS_FSACM05A-5', 'FSACM05A', 'JPS_FSACM05A-5', 'inbound');
 INSERT INTO JourneyPattern (JourneyPatternId, ServiceRef, JourneyPatternSectionRef, JourneyPatternDirection) VALUES ('JPS_FSACM05A-6', 'FSACM05A', 'JPS_FSACM05A-6', 'outbound');
-INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond) VALUES ('96943', 'FSACM05A', '0', 'JPS_FSACM05A-4', 'CAL', 0, 0, 0, 0, 1, 0, 0, 7, 35, 0);
+INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond, Note, NoteCode) VALUES ('96943', 'FSACM05A', '0', 'JPS_FSACM05A-4', 'CAL', 0, 0, 0, 0, 1, 0, 0, 7, 35, 0, '', '');
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96943', 1490918400, 1493251199);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96943', 1506297600, 2524607999);
-INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond) VALUES ('96944', 'FSACM05A', '0', 'JPS_FSACM05A-5', 'CAL', 0, 0, 0, 0, 0, 1, 0, 7, 0, 0);
+INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond, Note, NoteCode) VALUES ('96944', 'FSACM05A', '0', 'JPS_FSACM05A-5', 'CAL', 0, 0, 0, 0, 0, 1, 0, 7, 0, 0, '', '');
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96944', 1497657600, 1497743999);
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96944', 1498262400, 1498348799);
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96944', 1498867200, 1498953599);
@@ -48,7 +48,7 @@ INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('9694
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96944', 1506124800, 1506211199);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96944', 1490918400, 1493251199);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96944', 1506297600, 2524607999);
-INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond) VALUES ('96945', 'FSACM05A', '0', 'JPS_FSACM05A-4', 'CAL', 0, 0, 0, 0, 0, 0, 1, 16, 55, 0);
+INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond, Note, NoteCode) VALUES ('96945', 'FSACM05A', '0', 'JPS_FSACM05A-4', 'CAL', 0, 0, 0, 0, 0, 0, 1, 16, 55, 0, '', '');
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96945', 1497744000, 1497830399);
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96945', 1498348800, 1498435199);
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96945', 1498953600, 1499039999);
@@ -66,7 +66,7 @@ INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('9694
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96945', 1506211200, 1506297599);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96945', 1490918400, 1493251199);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96945', 1506297600, 2524607999);
-INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond) VALUES ('96946', 'FSACM05A', '0', 'JPS_FSACM05A-6', 'CAL', 0, 0, 0, 0, 0, 0, 1, 13, 50, 0);
+INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond, Note, NoteCode) VALUES ('96946', 'FSACM05A', '0', 'JPS_FSACM05A-6', 'CAL', 0, 0, 0, 0, 0, 0, 1, 13, 50, 0, '', '');
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96946', 1497744000, 1497830399);
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96946', 1498348800, 1498435199);
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96946', 1498953600, 1499039999);
@@ -84,6 +84,6 @@ INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('9694
 INSERT INTO DayOfOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96946', 1506211200, 1506297599);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96946', 1490918400, 1493251199);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96946', 1506297600, 2524607999);
-INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond) VALUES ('96947', 'FSACM05A', '0', 'JPS_FSACM05A-6', 'CAL', 0, 0, 0, 1, 1, 0, 0, 18, 40, 0);
+INSERT INTO VehicleJourney (VehicleJourneyCode, ServiceRef, LineRef, JourneyPatternRef, OperatorRef, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, DepatureHour, DepatureMinute, DepatureSecond, Note, NoteCode) VALUES ('96947', 'FSACM05A', '0', 'JPS_FSACM05A-6', 'CAL', 0, 0, 0, 1, 1, 0, 0, 18, 40, 0, '', '');
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96947', 1490918400, 1493251199);
 INSERT INTO DayOfNonOperation (VehicleJourneyRef, StartDate, EndDate) VALUES ('96947', 1506297600, 2524607999);
