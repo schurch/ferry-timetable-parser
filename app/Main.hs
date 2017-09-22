@@ -11,13 +11,8 @@ main :: IO ()
 main = do
   args <- getArgs
   let file = head args
-  fileContents <-
-    readFile $
-    "/Users/stefanchurch/Documents/Source/Haskell/parser/input/" ++ file
+  fileContents <- readFile $ "input/" ++ file
   let transXChangeData = parseTransXChangeXML fileContents
   let sqlStatements = generateSQLStatements transXChangeData
   let output = intercalate "\n" sqlStatements
-  writeFile
-    ("/Users/stefanchurch/Documents/Source/Haskell/parser/output/" ++
-     file ++ ".sql")
-    output
+  writeFile ("output/" ++ file ++ ".sql") output
