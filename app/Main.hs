@@ -11,7 +11,7 @@ main :: IO ()
 main = do
   args <- getArgs
   let file = head args
-  fileContents <- readFile $ "input/" ++ file
+  fileContents <- readFile $ "input/S/" ++ file
   let transXChangeData = parseTransXChangeXML fileContents
   let sqlStatements = generateSQLStatements transXChangeData
   let output = intercalate "\n" sqlStatements
